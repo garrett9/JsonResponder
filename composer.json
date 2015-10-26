@@ -1,0 +1,17 @@
+{
+    "name": "dfsainc/jsonresponder",
+    "description": "A class offering easier methods returning specific types of JSON responses.",
+    "require": {},
+    "authors": [
+        {
+            "name": "Garrett",
+            "email": "garrettshevach@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DFSAInc\\JsonResponder\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
