@@ -210,6 +210,18 @@ class JsonResponder {
         $msg = (is_string($msg)) ? $msg : 'Internal Server Error!';
         return $this->response(false, Response::HTTP_INTERNAL_SERVER_ERROR, $msg);
     }
+    
+    /**
+     * Returns a 501 JSON response.
+     * 
+     * @param unknown $msg
+     * @return \Illuminate\Http\Response
+     */
+    public function notImplemented($msg = null) 
+    {
+        $msg = (is_string($msg)) ? $msg : 'Not Implemented!';
+        return $this->response(false, Response::NOT_IMPLEMENTED, $msg);
+    }
 
     /*
      * |--------------------------------------------------------------------------
