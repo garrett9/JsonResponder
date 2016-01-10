@@ -4,8 +4,6 @@ namespace DFSAInc\JsonResponder\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use DFSAInc\JsonResponder\JsonResponder;
-use Illuminate\Contracts\View\Factory as ViewFactory;
-use \Illuminate\Routing\Redirector;
 
 class JsonResponderServiceProvider extends ServiceProvider
 {
