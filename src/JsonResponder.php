@@ -252,7 +252,7 @@ class JsonResponder {
         ];
         if (is_string($message))
             $result['message'] = $message;
-        if ($payload || is_array($payload))
+        if (is_numeric($payload) || $payload || is_array($payload))
             $result['payload'] = $payload;
         
         $response = $this->response->json($result, $status, $headers);
